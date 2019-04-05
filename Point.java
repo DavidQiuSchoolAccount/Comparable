@@ -11,9 +11,9 @@ public class Point implements Comparable<Point> {
 		return Math.sqrt(x * x + y * y);
 	}
 
-	public int compareTo(Point point) {
+	public int compareTo(Point other) {
 		double dist = distanceFromOrigin();
-		double otherDist = point.distanceFromOrigin();
+		double otherDist = other.distanceFromOrigin();
 
 		if(dist == otherDist) { return 0; }
 		else { return (int) (dist - otherDist); }
