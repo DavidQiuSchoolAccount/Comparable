@@ -16,7 +16,7 @@ public class Date implements Comparable<Date> {
 		if(year != other.year) { return year - other.year; }
 		else if(month != other.month) { return month - other.month; }
 		else if(day != other.day) { return day - other.day; }
-		else { return 0; }
+		return 0;
 	}
 
 	public String toString() {
